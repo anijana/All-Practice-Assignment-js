@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Admission Form</title>
+  </head>
+  <body>
+    <div class="title-container">
+      <h2 class="font">Admission Form for Geekster</h2>
+    </div>
+    <div class="form-container">
+      <form action="">
+        <h4 class="font1">Personal Info</h4>
+        <input
+          type="text"
+          name="f_name"
+          class="inline"
+          placeholder="First Name"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="text"
+          name="l_name"
+          class="inline"
+          placeholder="Last Name"
+          autocomplete="off"
+        /><br />
+        <input
+          type="email"
+          name="mail"
+          class="inline"
+          placeholder="Email ID"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          class="inline"
+          placeholder="Phone Number"
+          required
+          pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+          title="Please enter in the format 1111-111-111"
+        /><br />
+        <input
+          type="date"
+          class="inline"
+          name="date_of_birth"
+          max="2022-01-01"
+        />
+        <select name="gender" class="inline" id="">
+          <option value="" selected disabled>Seclect gender</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">other</option>
+        </select>
+        <br />
+        <textarea
+          name="address"
+         cols="88"
+         rows="5"
+          placeholder="Address"
+          class="inline1"
+    
+        ></textarea>
+        <hr>
+        <h4 class="font1"><b> Education Info</b></h4>
+        <select name="degree" id="" class="inline">
+          <option value="" selected disabled>Select Degree</option>
+          <optgroup label="Bachelors">
+            <option value="">B.Tech</option>
+            <option value="">B.E</option>
+            <option value="">B.Sc</option>
+          </optgroup>
+          <optgroup label="Masters">
+            <option value="">M.Tech</option>
+            <option value="">M.E</option>
+            <option value="">M.Sc</option>
+          </optgroup>
+        </select>
+        <input
+          type="text"
+          class="inline"
+          name="college"
+          placeholder="College Name"
+        />
+        <br/>
+        <input
+          type="number"
+          class="inline"
+          name="graduation_year"
+          placeholder="Year of Graduation"
+          min="2010"
+          max="2022"
+        />
+        <input
+          type="number"
+          class="inline"
+          name="percentage"
+          placeholder="Percentage"
+          min="0"
+          max="100"
+          step="0.1"
+        />
+        Upload Resume:
+        <input type="file" class="inline" />
+        
+        <hr />
+        <h4 class="font1"><b>Course Details</b></h4>
+        <p class="font1"><b>Which level do you want to enroll?</b></p>
+        <input type="radio" name="btn" id="">Fundamentals
+        <input type="radio" name="btn" id="">Advanced
+        <br>
+        <p class="font1"><b>Which course do you want to enroll?</b></p>
+        <input type="checkbox" name="btn" id="">MERN Full Stack
+        <input type="checkbox" name="btn" id="">JAVA Full Stack
+        <br>
+        <hr>
+        <br>
+        <input type="submit" value="Apply for Admission" class="btn1" />
+        <input type="reset" value="Reset" class="btn2"/>
+      </form>
+    </div>
+  </body>
+</html>

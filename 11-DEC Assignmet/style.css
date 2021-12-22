@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    font-size: 20px;
+  }
+
+
+  a{
+      text-decoration: none;
+      text-decoration: none;
+      color: #ffffff;
+      margin : 10px; 
+  }
+
+  .header {
+    background: #ee5253;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .heading{
+      flex-basis: 50%;
+      
+  }
+  .anchor{
+      margin:auto;
+  }
+  .anchor ul{
+      display:flex;
+      flex-direction:row;
+      list-style-type: none;
+  
+  }
+  .step {
+    background-color: white;
+    padding: 5px;
+    margin: 20px 0px;
+  }
+  h1 {
+    color: white;
+    margin-left: 5%;
+    
+  }
+  h2 {
+    padding: 0 0 10px 40px;
+    color: #ee5253;
+    border-bottom: 1px solid #ee5253;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+  }
+  
+  .container {
+    display: flex;
+    
+  }
+  .left-container {
+    flex-basis: 70%;
+    margin: 0px 10px;
+  }
+  .right-container{
+      flex-basis: 30%;
+  }
+  img {
+    width: 100%;
+    margin-top: 30px;
+
+  }
+  .image{
+      width: 100%;
+      border-radius: 250px;
+      
+  }
+  .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 120px 100px 120px;
+    background-color: #48dbfb;
+    flex-direction: column;
+    margin-top: 30px;
+    
+  }
+  h5{
+      margin-top: 20px;
+  }
+  .sticky{
+      position:sticky;
+      top:80px;
+      padding-left:20px;
+      border: 1px solid #ee5253;
+    color: #ee5253;
+    cursor: pointer;
+  }
+  
+  .footerSection{
+    background-color: #c8d6e5;
+    margin-top: 50px;
+    border-top: 1px solid #ee5253;
+      
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50%;
+  }
+  input{
+      width: 150%;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+  }
+  .text{
+      color: red;
+      margin-left: 130px;
+
+  }
+  .text1{
+      color: black;
+    
+  }
+  .DIV1{
+margin-left: 150px;
+  }
+  .send{
+    background-color: #fa983a;
+    cursor: pointer;
+  }
+ 

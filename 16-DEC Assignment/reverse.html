@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+    <style>
+        body{
+            background-color: #dcdde1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 200px;
+        }
+        button{
+            padding: 10px;
+            background-color: #fa983a;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input{
+            
+            padding: 10px;
+            height: 20%;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        div{
+            margin-top: 30px;
+        }
+        h1{
+            color: #c23616;
+        }
+        p{
+            margin-left: 110px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #00a8ff;
+        }
+    </style>
+</head>
+<body>
+    <h1> Reverse Number</h1>
+    <div>
+    <form id="form" >
+        <input type="number" name="" id="number">
+        <button>Click</button>
+    </form>
+    <p id="result"></p>
+    <script>
+        let frm = document.getElementById("form");
+        frm.onsubmit= function() {
+            let input = document.getElementById("number").value;
+            let preview = document.getElementById("result");
+            let i, rev=0;
+            while(input !=0){
+                rev=(rev*10)+(input%10);
+                input=parseInt(input/10);
+            }
+            preview.innerHTML = rev;
+            return false;
+        }
+    </script>
+</body>
+</html>

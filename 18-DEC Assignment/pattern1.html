@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Star Pattern</title>
+    <style>
+      body {
+        background-color: #576574;
+        font-size: 40px;
+        padding: auto;
+      }
+      .f1 {
+        color: #4cd137;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: auto;
+      }
+      .f2 {
+        color: #dcdde1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+        padding: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="f1">
+      <h1>Pattern1</h1>
+      <script>
+        for (let x = 3; x >= 1; x--) {
+          for (let y = 1; y <= 5 - x; y++) {
+            document.write("&nbsp;&nbsp;");
+          }
+          for (let z = 1; z <= x; z++) {
+            document.write("*");
+          }
+          for (let a = 1; a <= x - 1; a++) {
+            document.write("*");
+          }
+
+          document.write("<br>");
+        }
+        for (let i = 2; i <= 3; i++) {
+          for (let k = 1; k <= 5 - i; k++) {
+            document.write("&nbsp;&nbsp;");
+          }
+          for (let j = 1; j <= i; j++) {
+            document.write("*");
+          }
+          for (let l = 1; l <= i - 1; l++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      </script>
+      
+    </div>
+    <div class="f2">
+      <h1>Pattern2</h1>
+      <script>
+        for (let x = 5; x >= 1; x--) {
+          for (let y = 1; y <= 5 - x; y++) {
+            document.write("&nbsp;&nbsp;");
+          }
+          for (let z = 1; z <= x; z++) {
+            document.write("*");
+          }
+          for (let a = 1; a <= x - 1; a++) {
+            document.write("*");
+          }
+
+          document.write("<br>");
+        }
+        for (let i = 2; i <= 5; i++) {
+          for (let k = 1; k <= 5 - i; k++) {
+            document.write("&nbsp;&nbsp;");
+          }
+          for (let j = 1; j <= i; j++) {
+            document.write("*");
+          }
+          for (let l = 1; l <= i - 1; l++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      </script>
+    </div>
+  </body>
+</html>
